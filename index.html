@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Cadastre seu veículo para vender mais rápido!</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p class="title-header">Formulário</p>
+            </div>
+            <div class="form-body">
+                <h1>Venda Fácil seu carro</h1>
+                <p>Descreva as características e marque os opcionais que ele possui</p>
+                <form action="register.php">
+                    <label for="title">Título do anúncio: <span class="required">*</span></label>
+                    <input class="input-text" name="title" placeholder="Um título para anunciar seu carro" required>
+                    <label for="price" required>Preço <span class="required">*</span></label>
+                    <input class="input-text" type="number" name="price" placeholder="Defina o preço" required>
+                    <label for="description">Descrição <span class="required">*</span></label>
+                    <textarea class="input-text" name="description" placeholder="Aqui você coloca os detalhes do veículo, por exemplo: se ele tem algum arranhão." required></textarea>
+                    <label for="brand">Marca: <span class="required">*</span></label>
+                    <input class="input-text" type="text" name="brand" placeholder="Digite a marca do veículo" required>
+                    <label for="model">Modelo: <span class="required">*</span></label>
+                    <input class="input-text" type="text" name="model" placeholder="Digite o modelo do veículo" required>
+                    <label for="mileage">Kilometragem: <span class="required">*</span></label>
+                    <input class="input-text" type="number" name="mileage" placeholder="Digite a kilometragem do veículo" required>
+                    <label for="date">Data de compra: <span class="required">*</span></label>
+                    <input class="input-text" type="date" name="date" required>
+                    <label for="gearbox">Tipo de câmbio: <span class="required">*</span></label>
+                    <div class="gearbox">
+                        <div>
+                            <input type="radio" name="gearbox" value="automatic">
+                            <label for="automatic">Automático</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="gearbox" value="manual">
+                            <label for="manual">Manual</label>
+                        </div>
+                    </div>
+                    <label id="optional" for="optional">Opcionais:</label>
+                    <div class="optional-container">
+                        <div>
+                            <input type="checkbox" name="optional" value="airbag">
+                            <label for="airbag">Air bag</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="optional" value="alarm">
+                            <label for="alarm">Alarme</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="optional" value="air_conditioner">
+                            <label for="air_conditioner">Ar condicionado</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="optional" value="reverse_camera">
+                            <label for="reverse_camera">Câmera de ré</label>
+                        </div>
+                    </div>
+                    <div class="optional-container-2">
+                        <div>
+                            <input type="checkbox" name="optional" value="track_assistant
+                                        ">
+                            <label for="track_assistant">Assistente de pista</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="optional" value="keyless_start">
+                            <label for="keyless_start">Partida Keyless</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="optional" value="phone_integration">
+                            <label for="phone_integration">Integração com celular</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="optional" value="leather_seat">
+                            <label for="leather_seat">Banco de couro</label>
+                        </div>
+                    </div>
+                    <div class="img-car">
+                        <label for="car_image">Fotos do carro: <span class="required">*</span></label>
+                        <input id="file-car" type="file" name="optional">
+                    </div>
+                    <div>
+                        <input type="submit" id="button" type="button" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
