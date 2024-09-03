@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -26,7 +27,7 @@ input[type="text"],
 input[type="number"],
 input[type="date"],
 input[type="file"] {
-    width: 400px;
+    width: 60%;
 }
 
 .header {
@@ -71,6 +72,7 @@ input[type="file"] {
 .input-text {
    display: block;
    margin: 5px 0px 10px 0px;
+   width: 60%;
 }
 
 form {
@@ -130,4 +132,75 @@ textarea {
 
 .required {
     color: rgb(235, 22, 22);
+}
+
+@media screen and (max-width: 768px) {
+    .form-container {
+        width: 80%;
+        top: -30px;
+    }
+    
+    .input-text {
+        display: block;
+        margin: 5px 0px 10px 0px;
+        width: 70%;
+     }
+
+     input[type="text"],
+     input[type="number"],
+     input[type="date"],
+     input[type="file"] {
+         width: 70%;
+     }
+
+    .form-body {
+        padding: 20px;
+    }
+
+    .optional-container, .optional-container-2 {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        padding: 15px;
+    }
+
+    .form-container {
+        width: 90%;
+        top: -65px;
+    }
+
+    .input-text {
+        display: block;
+        margin: 5px 0px 10px 0px;
+        width: 80%;
+     }
+
+     input[type="text"],
+     input[type="number"],
+     input[type="date"],
+     input[type="file"] {
+         width: 80%;
+     }
+
+    .form-body {
+        padding: 15px;
+    }
+
+    .title-header {
+        width: auto;
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    #button {
+        width: 40%;
+        max-width: none;
+    }
+
+    .optional-container, .optional-container-2 {
+        display: block;
+    }
 }
